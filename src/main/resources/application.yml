@@ -1,0 +1,14 @@
+micronaut:
+  application:
+    name: mn-issue-zdt
+
+datasources:
+  default:
+    url: jdbc:postgresql://${DB_HOST:localhost}/${DB_NAME:postgres}
+    username: ${DB_USERNAME:brsanthu}
+    password: ${DB_PASSWORD:postgres}
+    driverClassName: org.postgresql.Driver
+    maximumPoolSize: 1
+    idleTimeout: 15000
+    minimumIdle: 0
+    dialect: postgres
